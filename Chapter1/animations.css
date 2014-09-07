@@ -1,0 +1,54 @@
+﻿/* Code used by JavaScript animation sample */
+#jsanimation {
+    position: relative;
+}
+
+/* Code used by jQuery animation sample */
+#jQanimation {
+    position: relative;
+}
+
+/* Code used by CSS Transition animation sample */
+#csstransition {
+    position: relative;
+    /* Here we should add -moz-transition, -webkit-transition, -o-transition for browsers compatibility, we will explain about vendor prefixes later */
+    transition: all 2s ease-in-out;
+}
+
+.move-to-right {
+    /* Here we should add vendor prefixes too */
+    transform: translate(100px,0);
+}
+
+/* Code used by CSS Animation sample */
+#cssanimation {
+    position: relative;
+}
+
+@-webkit-keyframes move-to-right-animation {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+@keyframes move-to-right-animation {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+.move-to-right-animation {
+    position: relative;
+    left: 100px;
+    /* Here we should add -moz-animation, -o-animation for browsers compatibility*/
+    -webkit-animation: move-to-right-animation 1s ease-in-out;
+    animation: move-to-right-animation 1s ease-in-out;
+}

@@ -1,0 +1,114 @@
+﻿
+@-webkit-keyframes first-exercise {
+    from {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    66% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    to {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@-moz-keyframes first-exercise {
+    from {
+        width: 20px;
+        height: 20px;
+    }
+
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@-o-keyframes first-exercise {
+    from {
+        width: 20px;
+        height: 20px;
+    }
+
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes first-exercise {
+    from {
+        width: 20px;
+        height: 20px;
+    }
+
+    to {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+#threeBalls > div {
+    display: inline-block;
+}
+
+#first {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    -o-animation-name: first-exercise;
+    -moz-animation-name: first-exercise;
+    -webkit-animation-name: first-exercise;
+    animation-name: first-exercise;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#second {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    -o-animation-name: first-exercise;
+    -moz-animation-name: first-exercise;
+    -webkit-animation-name: first-exercise;
+    animation-name: first-exercise;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#third {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    -o-animation-name: first-exercise;
+    -moz-animation-name: first-exercise;
+    -webkit-animation-name: first-exercise;
+    animation-name: first-exercise;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}

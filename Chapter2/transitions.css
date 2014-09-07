@@ -1,0 +1,42 @@
+﻿.cssanimation {
+    width: 200px;
+    border: 1px solid black;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.cssanimation:hover {
+    width:400px;
+}
+
+.cssanimationOneline {
+    transition: width 2s;
+}
+
+.cssanimationTimes {
+    transition-property: width, background-color;
+    transition-duration: 2s, 10s;
+}
+
+.cssAnimationTimesOneLine {
+    width: 100px;
+    background-color: white;
+    transition: width 2s, background-color 10s;
+}
+
+    .cssAnimationTimesOneLine:hover {
+        width: 200px;
+        background-color: red;
+    }
+
+.cssanimationEasing {
+    width: 200px;
+    background-color: black;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+    .cssanimationEasing:hover {
+        background-color: red;
+    }
