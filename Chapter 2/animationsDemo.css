@@ -1,0 +1,104 @@
+﻿.ease {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+    .ease:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.linear {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+}
+
+    .linear:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.ease-in {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+
+    .ease-in:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.ease-out {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+}
+
+    .ease-out:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.ease-in-out {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+}
+
+    .ease-in-out:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.step-start {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: step-start;
+    transition-duration: 2s;
+}
+
+    .step-start:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }
+
+.step-end {
+    color:white;
+    background-color: black;
+    width: 100px;
+    transition-property: all;
+    transition-timing-function: step-end;
+    transition-duration: 2s;
+}
+
+    .step-end:hover {
+        color:black;
+        width: 300px;
+        background-color: red;
+    }

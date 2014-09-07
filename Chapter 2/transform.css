@@ -1,0 +1,126 @@
+﻿.transformOne {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+    .transformOne:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+.transformTwo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    -webkit-transition: -webkit-transform ease-in 1s;
+    transition: transform ease-in 1s;
+}
+
+    .transformTwo:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+
+@-webkit-keyframes animation-transform {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation-transform {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.transformThree {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    -webkit-animation-name: animation-transform;
+    animation-name: animation-transform;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+.transformFour > img {
+    margin: 100px;
+}
+
+    .transformFour img:hover {
+        -webkit-transform: scale(2,2);
+        transform: scale(2,2);
+    }
+
+.transformFive > img {
+    margin-left: 150px;
+}
+
+    .transformFive img:hover {
+        -webkit-transform: scale(2,1);
+        transform: scale(2,1);
+    }
+
+.transformSix {
+    display: block;
+    margin: 50px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: grey;
+}
+
+    .transformSix:hover {
+        -webkit-transform: skewX(45deg);
+        transform: skewX(45deg);
+    }
+
+.transformSeven {
+    margin: 100px;
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: grey;
+}
+
+    .transformSeven:hover {
+        -webkit-transform: skewY(45deg);
+        transform: skewY(45deg);
+    }
+
+.transformTranslate {
+    display: block;
+    width: 400px;
+    height: 50px;
+    border: 1px solid red;
+    background-color: grey;
+}
+.transformTranslate:hover {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
