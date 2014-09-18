@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS ngRepeat sample</title>
+  <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+<body>
+    <style>
+        /* ngRepeat animation*/
+        /* ngRepeat ng-enter animation */
+        .repeatItem.ng-enter {
+            -webkit-animation: 1s ng-enter-repeat-animation;
+            -moz-animation: 1s ng-enter-repeat-animation;
+            -ms-animation: 1s ng-enter-repeat-animation;
+            -o-animation: 1s ng-enter-repeat-animation;
+            animation: 1s ng-enter-repeat-animation;
+        }
+
+        @-webkit-keyframes ng-enter-repeat-animation {
+            from {
+                opacity: 0;
+                color: red;
+            }
+
+            to {
+                opacity: 1;
+                color: black;
+            }
+        }
+
+        @-moz-keyframes ng-enter-repeat-animation {
+            from {
+                opacity: 0;
+                color: red;
+            }
+
+            to {
+                opacity: 1;
+                color: black;
+            }
+        }
+
+        @-ms-keyframes ng-enter-repeat-animation {
+            from {
+                opacity: 0;
+                color: red;
+            }
+
+            to {
+                opacity: 1;
+                color: black;
+            }
+        }
+
+        @-o-keyframes ng-enter-repeat-animation {
+            from {
+                opacity: 0;
+                color: red;
+            }
+
+            to {
+                opacity: 1;
+                color: black;
+            }
+        }
+
+        @keyframes ng-enter-repeat-animation {
+            from {
+                opacity: 0;
+                color: red;
+            }
+
+            to {
+                opacity: 1;
+                color: black;
+            }
+        }
+        /* ngRepeat ng-move animation */
+        .repeatItem.ng-move {
+            -webkit-animation: 1s ng-move-repeat-animation;
+            -moz-animation: 1s ng-move-repeat-animation;
+            -ms-animation: 1s ng-move-repeat-animation;
+            -o-animation: 1s ng-move-repeat-animation;
+            animation: 1s ng-move-repeat-animation;
+        }
+
+        @-webkit-keyframes ng-move-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0.5;
+                color: blue;
+            }
+        }
+
+        @-moz-keyframes ng-move-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0.5;
+                color: blue;
+            }
+        }
+
+        @-ms-keyframes ng-move-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0.5;
+                color: blue;
+            }
+        }
+
+        @-o-keyframes ng-move-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0.5;
+                color: blue;
+            }
+        }
+        /* ngRepeat ng-leave animation */
+        .repeatItem.ng-leave {
+            -webkit-animation: 1s ng-leave-repeat-animation;
+            -moz-animation: 1s ng-leave-repeat-animation;
+            -ms-animation: 1s ng-leave-repeat-animation;
+            -o-animation: 1s ng-leave-repeat-animation;
+            animation: 1s ng-leave-repeat-animation;
+        }
+
+        @-webkit-keyframes ng-leave-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0;
+                color: red;
+            }
+        }
+
+        @-moz-keyframes ng-leave-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0;
+                color: red;
+            }
+        }
+
+        @-ms-keyframes ng-leave-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0;
+                color: red;
+            }
+        }
+
+        @-o-keyframes ng-leave-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0;
+                color: red;
+            }
+        }
+
+        @keyframes ng-leave-repeat-animation {
+            from {
+                opacity: 1;
+                color: black;
+            }
+
+            to {
+                opacity: 0;
+                color: red;
+            }
+        }
+    </style>
+    <div ng-controller="animationsCtrl">
+        <h1>ngRepeat Animation</h1>
+        <div>
+            <div ng-repeat="item in items" class="repeatItem">
+                {{item.name}}
+            </div>
+            <button ng-click="addItem()">Add item</button><button ng-click="removeItem()">Remove item</button><button ng-click="sortItems()">Sort items</button>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-animate.min.js"></script>
+    <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+        app.controller('animationsCtrl', function ($scope) {
+            $scope.items = [{ name: 'Richard' }, { name: 'Bruno' }, { name: 'Jobson' }];
+            $scope.counter = 0;
+            $scope.addItem = function () {
+                var name = 'Item' + $scope.counter++;
+                $scope.items.push({ name: name });
+            };
+
+            $scope.removeItem = function () {
+                var length = $scope.items.length;
+                var indexRemoved = Math.floor(Math.random() * length);
+                $scope.items.splice(indexRemoved, 1);
+            };
+
+            $scope.sortItems = function () {
+                $scope.items.sort(function (a, b) { return a[name] < b[name] ? -1 : 1 });
+            };
+        });
+    </script>
+</body>
+</html>

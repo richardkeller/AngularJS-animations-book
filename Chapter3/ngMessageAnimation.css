@@ -1,0 +1,44 @@
+﻿.ngMessagesClass {
+    height: 50px;
+    width: 350px;
+}
+
+.ngMessagesClass.ng-active-add {
+    transition: 0.3s linear all;
+    background-color: red;
+}
+
+.ngMessagesClass.ng-active {
+    background-color: red;
+}
+
+.ngMessagesClass.ng-inactive-add {
+    transition: 0.3s linear all;
+    background-color: white;
+}
+
+.ngMessagesClass.ng-inactive {
+    background-color: white;
+}
+
+.ngMessageClass {
+    color: white;
+}
+
+.ngMessageClass.ng-enter {
+    transition: 0.3s linear all;
+    color: transparent;
+}
+
+.ngMessageClass.ng-enter-active {
+    color: white;
+}
+
+.ngMessageClass.ng-leave {
+    transition: 0.3s linear all;
+    color: white;
+}
+
+.ngMessageClass.ng-leave-active {
+    color: transparent;
+}
