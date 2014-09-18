@@ -1,0 +1,100 @@
+﻿/* ngclass animation */
+/*This is the initialClass, that keeps in the element*/
+.initialClass {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* This is the animationClass, that is added or removed by the ngClass expression*/
+.animationClass {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+/* This is the animationd definition, this class is added when the animationClass is about to be appended to element classes*/
+.initialClass.animationClass-add {
+    -webkit-animation: 1s ng-class-animation;
+    -moz-animation: 1s ng-class-animation;
+    -ms-animation: 1s ng-class-animation;
+    -o-animation: 1s ng-class-animation;
+    animation: 1s ng-class-animation;
+}
+
+/* This is the animationd definition, this class is added when the animationClass is about to be appended to element classes*/
+.initialClass.animationClass-remove  {
+    -webkit-animation: 1s ng-class-animation reverse;
+    -moz-animation: 1s ng-class-animation reverse;
+    -ms-animation: 1s ng-class-animation reverse;
+    -o-animation: 1s ng-class-animation reverse;
+    animation: 1s ng-class-animation reverse;
+}
+
+@-webkit-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+@-moz-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+@-ms-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+@-o-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+@keyframes ng-class-animation {
+    from {
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
