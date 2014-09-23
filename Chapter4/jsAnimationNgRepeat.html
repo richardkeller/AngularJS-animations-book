@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS JavaScript animations - ngRepeat</title>
+  <link rel="stylesheet" href="../stylesheets/styles.css">
+</head>
+<body>
+  <div ng-controller="repeatController as rc">
+    <h2>ngRepeat Animation</h2>
+    <button ng-click="rc.sortItems()">Sort items</button>
+    <div ng-repeat="item in rc.items" class="repeatItemAnimation">
+      {{item.name}}
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular-animate.min.js"></script>
+  <script src="jsAnimationNgRepeat.js"></script>
+</body>
+</html>
