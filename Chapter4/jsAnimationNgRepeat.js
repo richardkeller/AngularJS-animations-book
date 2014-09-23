@@ -46,6 +46,6 @@ function repeatItemAnimation() {
 }
 
 
-var app = angular.module('javascriptSample', ['ngAnimate'])
+var app = angular.module('myApp', ['ngAnimate'])
     .controller("repeatController", repeatControllerFn)
     .animation(".repeatItemAnimation", repeatItemAnimation);
