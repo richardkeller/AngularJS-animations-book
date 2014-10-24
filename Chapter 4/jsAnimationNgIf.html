@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS JavaScript animations - ngIf</title>
+</head>
+<body>
+  <div>
+    <h2>ngIf Animation</h2>
+    <button ng-click="toggleNgIf = !toggleNgIf">Display/Remove the div below</button>
+    <div ng-if="toggleNgIf" class="ifJsAnimation">
+      This is a div element with ng-if="toggleNgIf"
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script src="jsAnimationNgIf.js"></script>
+</body>
+</html>

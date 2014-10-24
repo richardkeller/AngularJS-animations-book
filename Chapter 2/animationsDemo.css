@@ -1,5 +1,5 @@
 ﻿.ease {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -7,14 +7,14 @@
     transition-duration: 2s;
 }
 
-    .ease:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.ease:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .linear {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -22,14 +22,14 @@
     transition-duration: 2s;
 }
 
-    .linear:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.linear:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .ease-in {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -37,14 +37,14 @@
     transition-duration: 2s;
 }
 
-    .ease-in:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.ease-in:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .ease-out {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -52,14 +52,14 @@
     transition-duration: 2s;
 }
 
-    .ease-out:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.ease-out:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .ease-in-out {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -67,14 +67,14 @@
     transition-duration: 2s;
 }
 
-    .ease-in-out:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.ease-in-out:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .step-start {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -82,14 +82,14 @@
     transition-duration: 2s;
 }
 
-    .step-start:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.step-start:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}
 
 .step-end {
-    color:white;
+    color: white;
     background-color: black;
     width: 100px;
     transition-property: all;
@@ -97,8 +97,8 @@
     transition-duration: 2s;
 }
 
-    .step-end:hover {
-        color:black;
-        width: 300px;
-        background-color: red;
-    }
+.step-end:hover {
+    color: black;
+    width: 300px;
+    background-color: red;
+}

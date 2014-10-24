@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Staggering animations</title>
+  <link href="staggered.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>ngClass Staggering animation </h1>
+  <div id="parentElement">
+    <button ng-click="toggleNgClass = !toggleNgClass">Toggle ngClass animation</button>
+    <div ng-class="{'animationClass' : toggleNgClass}" class="ngClassAnimationSample">
+      First element
+    </div>
+    <div ng-class="{'animationClass' : toggleNgClass}" class="ngClassAnimationSample">
+      Second element
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script>
+    angular.module('myApp', ['ngAnimate']);
+  </script>
+</body>
+</html>

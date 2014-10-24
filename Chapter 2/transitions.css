@@ -24,10 +24,10 @@
     transition: width 2s, background-color 10s;
 }
 
-    .cssAnimationTimesOneLine:hover {
-        width: 200px;
-        background-color: red;
-    }
+.cssAnimationTimesOneLine:hover {
+    width: 200px;
+    background-color: red;
+}
 
 .cssanimationEasing {
     width: 200px;
@@ -37,6 +37,6 @@
     transition-duration: 2s;
 }
 
-    .cssanimationEasing:hover {
-        background-color: red;
-    }
+.cssanimationEasing:hover {
+    background-color: red;
+}

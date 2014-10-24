@@ -1,0 +1,39 @@
+﻿#menu.ng-hide-add {
+    transition: transform ease-in-out 0.3s;
+    transform: translateX(0px);
+}
+
+#menu.ng-hide-add-active {
+    transform: translateX(-150px);
+}
+
+#menu.ng-hide-remove {
+    transition: transform ease-in-out 0.3s;
+    transform: translateX(-150px);
+}
+
+#menu.ng-hide-remove-active {
+    transform: translateX(0px);
+}
+
+#menu {
+    position: absolute;
+    width: 130px;
+    background-color: white;
+    transform: translateZ(0);
+}
+
+#menu.ng-hide + #content {
+    transform: translateX(0px);
+}
+
+li {
+    box-shadow: 1px 1px 1px black;
+}
+
+#content {
+    width: 80%;
+    transition: transform ease-in-out 0.3s;
+    transform: translateX(150px);
+    text-shadow:1px 1px 1px black;
+}

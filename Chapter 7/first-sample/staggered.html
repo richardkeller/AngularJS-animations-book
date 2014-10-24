@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Staggering animations</title>
+  <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet" />
+  <link href="staggered.css" rel="stylesheet" />
+</head>
+<body>
+  <div ng-controller="staggeredCtrl as stagger">
+    <h1>ngRepeat Transition staggering sample</h1>
+    <button ng-click="showEmailsTransitions = !showEmailsTransitions">Show/Hide email list</button>
+    <button ng-click="stagger.archive()">Archive AngularJS emails</button>
+    <label for="filterBy">Filter email by:</label>
+    <input ng-model="stagger.filterBy" name="filterBy" />
+    <div ng-repeat="item in stagger.emails | filter:stagger.filterBy" ng-if="showEmailsTransitions" class="repeatItemTransition bg-primary">
+      {{item}}
+    </div>
+    <h1>ngRepeat Animation staggering sample</h1>
+    <button ng-click="showEmails = !showEmails">Show/Hide email list</button>
+    <button ng-click="stagger.archive()">Archive AngularJS emails</button>
+    <label for="animationFilterBy">Filter items by:</label>
+    <input ng-model="stagger.animationFilterBy" name="animationFilterBy" />
+    <div ng-repeat="item in stagger.emails | filter:stagger.animationFilterBy" ng-if="showEmails" class="repeatItem bg-primary">
+      {{item}}
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script src="staggeredCtrl.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS ngInclude sample</title>
+</head>
+<body>
+  <style>
+    .ngIncludeRelative {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .ngIncludeItem {
+      position: absolute;
+      width: 500px;
+      display: block;
+    }
+
+      .ngIncludeItem.ng-enter,
+      .ngIncludeItem.ng-leave {
+        -webkit-transition: 300ms linear all;
+        -moz-transition: 300ms linear all;
+        -ms-transition: 300ms linear all;
+        -o-transition: 300ms linear all;
+        transition: 300ms linear all;
+      }
+
+      .ngIncludeItem.ng-enter {
+        top: 100%;
+      }
+
+      .ngIncludeItem.ng-enter-active {
+        top: 0;
+      }
+
+      .ngIncludeItem.ng-leave {
+        top: 0;
+      }
+
+      .ngIncludeItem.ng-leave-active {
+        top: -100%;
+      }
+  </style>
+  <div ng-controller="animationsCtrl">
+    <h1>ngInclude sample</h1>
+    <p>Choose one template</p>
+    <select ng-model="ngIncludeSelected" ng-options="item.name for item in ngIncludeTemplates"></select>
+    <p>ngInclude:</p>
+    <div class="ngIncludeRelative">
+      <div class="ngIncludeItem" ng-include="ngIncludeSelected.url"></div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script>
+    var app = angular.module('myApp', ['ngAnimate']);
+    app.controller('animationsCtrl', function ($scope) {
+      $scope.ngIncludeTemplates = [{ name: 'first', url: 'first.html' }, { name: 'second', url: 'second.html' }];
+    })
+  </script>
+</body>
+</html>

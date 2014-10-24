@@ -1,0 +1,39 @@
+﻿#menu.ng-hide-add {
+    transition: left ease-in-out 0.3s;
+    left: 0px;
+}
+#menu.ng-hide-add-active {
+    left: -150px;
+}
+
+#menu.ng-hide-remove {
+    transition: left ease-in-out 0.3s;
+    left: -150px;
+}
+
+#menu.ng-hide-remove-active {
+    left: 0px;
+}
+
+#menu {
+    position: absolute;
+    left: 0;
+    width: 130px;
+    background-color: white;
+}
+
+#menu.ng-hide + #content {
+    left: 0px;
+}
+li {
+    box-shadow: 1px 1px 1px black;
+}
+
+#content {
+    position: absolute;
+    width: 80%;
+    transition: left ease-in-out 0.3s;
+    left: 150px;
+}
+
+
