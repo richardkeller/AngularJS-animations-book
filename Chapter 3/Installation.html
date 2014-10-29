@@ -1,44 +1,38 @@
 ﻿<!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title>AngularJS animation installation</title>
+  <title>AngularJS animation installation</title>
 </head>
 <body>
-    <style type="text/css">
-        .firstSampleAnimation.ng-hide-add,
-        .firstSampleAnimation.ng-hide-remove {
-            -webkit-transition: 1s ease-in-out opacity;
-            -moz-transition: 1s ease-in-out opacity;
-            -o-transition: 1s ease-in-out opacity;
-            transition: 1s ease-in-out opacity;
-        }
+  <style type="text/css">
+    .firstSampleAnimation.ng-hide-add,
+    .firstSampleAnimation.ng-hide-remove {
+      -webkit-transition: 1s ease-in-out opacity;
+      transition: 1s ease-in-out opacity;
+      opacity: 1;
+    }
 
-
-        .firstSampleAnimation.ng-hide {
-            opacity: 0;
-        }
-
-        .firstSampleAnimation {
-            opacity: 1;
-        }
-    </style>
-    <div>
-        <div ng-controller="animationsCtrl">
-            <h1>ngShow animation</h1>
-            <button ng-click="fadeAnimation = !fadeAnimation">Toggle fade</button>
-            fadeAnimation value: {{fadeAnimation}}
-            <div class="firstSampleAnimation" ng-show="fadeAnimation">
-                This element appears when the fadeAnimation model is true
-            </div>
-        </div>
+    .firstSampleAnimation.ng-hide {
+      opacity: 0;
+    }
+  </style>
+  <div>
+    <div ng-controller="animationsCtrl">
+      <h1>ngShow animation</h1>
+      <button ng-click="fadeAnimation = !fadeAnimation">Toggle fade</button>
+      fadeAnimation value: {{fadeAnimation}}
+      <div class="firstSampleAnimation" ng-show="fadeAnimation">
+        This element appears when the fadeAnimation model is true
+      </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
-    <script>
-        var app = angular.module('myApp', ['ngAnimate']);
-        app.controller('animationsCtrl', function ($scope) {
-            $scope.fadeAnimation = false;
-        });
-    </script>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script>
+    var app = angular.module('myApp', ['ngAnimate']);
+    app.controller('animationsCtrl', function ($scope) {
+      $scope.fadeAnimation = false;
+    });
+  </script>
 </body>
 </html>
