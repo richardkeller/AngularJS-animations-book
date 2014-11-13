@@ -1,43 +1,43 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <title>Chapter 2 - First sample</title>
-    <style>
-        .cssanimationTimes {
-            transition-property: width, background-color;
-            transition-duration: 2s, 10s;
-            width: 100px;
-        }
+  <title>Chapter 2 - First sample</title>
+  <style>
+    .cssanimationTimes {
+      transition-property: width, background-color;
+      transition-duration: 2s, 10s;
+      width: 100px;
+    }
 
-        .large {
-            width: 300px;
-        }
+    .large {
+      width: 300px;
+    }
 
-        .red {
-            background-color: red;
-        }
-    </style>
-    <link rel="stylesheet" href="../stylesheets/styles.css">
+    .red {
+      background-color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="../stylesheets/styles.css">
 </head>
 <body>
-    <h1>CSS Transition animation</h1>
-    <div class="cssanimationTimes">
-        Element with cssanimationTimes class
-    </div>
-    <button id="trigger">Trigger animation</button>
-    <button id="triggerReset">Reset animation</button>
-    <script>
-        document.getElementById('trigger').addEventListener('click', function () {
-            var element = document.getElementsByClassName('cssanimationTimes')[0];
-            //Append classes red and large, to change the background color to red and the width to 300px
-            element.className = element.className + " red large";
-        });
+  <h1>CSS Transition animation</h1>
+  <div class="cssanimationTimes">
+    Element with cssanimationTimes class
+  </div>
+  <button id="trigger">Trigger animation</button>
+  <button id="triggerReset">Reset animation</button>
+  <script>
+    document.getElementById('trigger').addEventListener('click', function () {
+      var element = document.getElementsByClassName('cssanimationTimes')[0];
+      //Append classes red and large, to change the background color to red and the width to 300px
+      element.className = element.className + " red large";
+    });
 
-        document.getElementById('triggerReset').addEventListener('click', function () {
-            var element = document.getElementsByClassName('cssanimationTimes')[0];
-            //Append classes red and large, to change the background color to red and the width to 300px
-            element.className = "cssanimationTimes";
-        });
-    </script>
+    document.getElementById('triggerReset').addEventListener('click', function () {
+      var element = document.getElementsByClassName('cssanimationTimes')[0];
+      //Append classes red and large, to change the background color to red and the width to 300px
+      element.className = "cssanimationTimes";
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+﻿/* ngRepeat animation*/
+.repeatItemTransition.ng-enter,
+.repeatItemTransition.ng-leave {
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1s;
+}
+
+    .repeatItemTransition.ng-enter,
+    .repeatItemTransition.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+        .repeatItemTransition.ng-leave,
+        .repeatItemTransition.ng-enter.ng-enter-active {
+            opacity: 1;
+        }
+
+
+.repeatItemTransition.ng-enter-stagger,
+.repeatItemTransition.ng-leave-stagger {
+    /* This is the delay between each animation of the staggered animation sequence */
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    /* This should be set to 0s to avoid problems, this element could inherit the value from the repeatItemTransition element */
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+
+.repeatItem.ng-enter-stagger,
+.repeatItem.ng-leave-stagger,
+.repeatItem.ng-move-stagger {
+    /* This is the delay between each animation of the staggered animation sequence, now for keyframes animations */
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    /* This should be set to 0s to avoid problems too, this element could inherit the value from the repeatItem element */
+    -webkit-animation-duration: 0;
+    -moz-animation-duration: 0;
+    -o-animation-duration: 0;
+    animation-duration: 0;
+}
+/* ngRepeat ng-enter animation */
+.repeatItem.ng-enter {
+    -webkit-animation: 1s ng-enter-repeat-animation;
+    -moz-animation: 1s ng-enter-repeat-animation;
+    -ms-animation: 1s ng-enter-repeat-animation;
+    -o-animation: 1s ng-enter-repeat-animation;
+    animation: 1s ng-enter-repeat-animation;
+}
+
+@-webkit-keyframes ng-enter-repeat-animation {
+    from {
+        opacity: 0;
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}
+
+@-moz-keyframes ng-enter-repeat-animation {
+    from {
+        opacity: 0;
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}
+
+@-ms-keyframes ng-enter-repeat-animation {
+    from {
+        opacity: 0;
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}
+
+@-o-keyframes ng-enter-repeat-animation {
+    from {
+        opacity: 0;
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}
+
+@keyframes ng-enter-repeat-animation {
+    from {
+        opacity: 0;
+        color: red;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}

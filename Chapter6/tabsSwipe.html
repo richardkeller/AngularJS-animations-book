@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Swipe Slider animation</title>
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no">
+  <link href="mobile.css" rel="stylesheet" />
+  <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+  <div ng-controller="tabsSwipeCtrl as responsive">
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" ng-click="responsive.selectPage(0)" ng-class="{'active': responsive.ngIncludeSelected.index == 0}">First</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" ng-click="responsive.selectPage(1)" ng-class="{'active': responsive.ngIncludeSelected.index == 1}">Second</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" ng-click="responsive.selectPage(2)" ng-class="{'active': responsive.ngIncludeSelected.index == 2}">Third</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" ng-click="responsive.selectPage(3)" ng-class="{'active': responsive.ngIncludeSelected.index == 3}">Fourth</button>
+      </div>
+    </div>
+    <div class="ngIncludeRelative">
+      <div class="ngIncludeItem" ng-include="responsive.ngIncludeSelected.url" ng-class="{'moveToLeft' : responsive.moveToLeft}"></div>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-touch.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+  <script src="tabsSwipeCtrl.js"></script>
+</body>
+</html>

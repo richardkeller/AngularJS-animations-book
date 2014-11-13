@@ -1,0 +1,157 @@
+﻿y/* customAnimation */
+.customAnimation {
+    background-color: blue;
+    padding: 20px;
+    transition: all linear 1s;
+}
+
+.customClick {
+    background-color: yellow;
+    padding: 40px;
+}
+
+.customAnimation.customClick-add {
+    -webkit-animation: 1s ng-class-animation;
+    -moz-animation: 1s ng-class-animation;
+    -ms-animation: 1s ng-class-animation;
+    -o-animation: 1s ng-class-animation;
+    animation: 1s ng-class-animation;
+}
+
+@-webkit-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@-moz-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@-ms-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@-o-keyframes ng-class-animation {
+    from {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@keyframes ng-class-animation {
+    from {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    to {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+
+/* toggle animation */
+.toggleAnimation.ng-enter,
+.toggleAnimation.ng-leave {
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1s;
+}
+
+    .toggleAnimation.ng-enter,
+    .toggleAnimation.ng-leave.ng-leave-active {
+        opacity: 0;
+    }
+
+        .toggleAnimation.ng-leave,
+        .toggleAnimation.ng-enter.ng-enter-active {
+            opacity: 1;
+        }
+
+/* move animation */
+ .moveItem.ng-move {
+    -webkit-animation: 1s ng-move-repeat-animation;
+    -moz-animation: 1s ng-move-repeat-animation;
+    -ms-animation: 1s ng-move-repeat-animation;
+    -o-animation: 1s ng-move-repeat-animation;
+    animation: 1s ng-move-repeat-animation;
+}
+
+@-webkit-keyframes ng-move-repeat-animation {
+    from {
+        opacity: 1;
+        color: black;
+    }
+
+    to {
+        opacity: 0.5;
+        color: blue;
+    }
+}
+
+@-moz-keyframes ng-move-repeat-animation {
+    from {
+        opacity: 1;
+        color: black;
+    }
+
+    to {
+        opacity: 0.5;
+        color: blue;
+    }
+}
+
+@-ms-keyframes ng-move-repeat-animation {
+    from {
+        opacity: 1;
+        color: black;
+    }
+
+    to {
+        opacity: 0.5;
+        color: blue;
+    }
+}
+
+@-o-keyframes ng-move-repeat-animation {
+    from {
+        opacity: 1;
+        color: black;
+    }
+
+    to {
+        opacity: 0.5;
+        color: blue;
+    }
+}

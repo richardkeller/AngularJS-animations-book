@@ -58,8 +58,3 @@ cssAnimationBtn.addEventListener('click', function moveCssAnimationBtnClickListe
     /* Add class "move-to-right" to the block on button click */
     cssAnimationElement.classList.add('move-to-right-animation');
 });
-
-
-
-
-

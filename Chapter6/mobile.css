@@ -1,0 +1,103 @@
+﻿/* To avoid a horizontal scrollbar when the page enters/leaves the view */
+body {
+    overflow-x: hidden;
+}
+
+.ngIncludeItem {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation-duration: 0.30s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 0.30s;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.page {
+    position: inherit;
+    top: 0;
+    right: inherit;
+    bottom: inherit;
+    left: inherit;
+}
+
+.firstPage {
+    background-color: blue;
+}
+
+.secondPage {
+    background-color: red;
+}
+
+.thirdPage {
+    background-color: green;
+}
+
+/* When the page enters, slide it from the right */
+.ngIncludeItem.ng-enter {
+    animation-name: slideFromRight;
+    -webkit-animation-name: slideFromRight;
+}
+/* When the page enters and moveToLeft is true, slide it from the left(out of the user view) to the right (left corner) */
+.ngIncludeItem.moveToLeft.ng-enter {
+    animation-name: slideFromLeft;
+    -webkit-animation-name: slideFromLeft;
+}
+/* When the page leaves, slide it to left(out of the user view) from the left corner,
+    in other words slide it from the left(out of the view) to the left corner but in reverse order */
+.ngIncludeItem.ng-leave {
+    animation-name: slideFromLeft;
+    animation-direction: reverse;
+    -webkit-animation-name: slideFromLeft;
+    -webkit-animation-direction: reverse;
+}
+/* When the page leaves, slide it to the right(out of the user view) from the the left corner,
+    in other words, slide it from the right but in reverse order  */
+.ngIncludeItem.moveToLeft.ng-leave {
+    animation-name: slideFromRight;
+    animation-direction: reverse;
+    -webkit-animation-name: slideFromRight;
+    -webkit-animation-direction: reverse;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideFromRight {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}

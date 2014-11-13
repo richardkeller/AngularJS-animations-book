@@ -1,0 +1,23 @@
+﻿/* add custom directive animation */
+.addAnimation.ng-enter {
+    -webkit-transition: opacity ease-in-out 1s;
+    -moz-transition: opacity ease-in-out 1s;
+    -ms-transition: opacity ease-in-out 1s;
+    -o-transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 1s;
+}
+
+.addAnimation.ng-enter {
+    opacity: 0;
+}
+
+.addAnimation.ng-enter-stagger {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+}
+
+.addAnimation.ng-enter.ng-enter-active {
+    opacity: 1;
+}

@@ -53,7 +53,5 @@ function hideJsAnimation() {
 
 }
 
-
-
 var app = angular.module('myApp', ['ngAnimate'])
     .animation(".hideJsAnimation", hideJsAnimation);

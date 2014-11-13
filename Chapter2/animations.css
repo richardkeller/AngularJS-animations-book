@@ -5,7 +5,6 @@
     }
 
     to {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -16,7 +15,6 @@
     }
 
     to {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -27,7 +25,6 @@
     }
 
     to {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -38,7 +35,6 @@
     }
 
     to {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -49,7 +45,6 @@
     }
 
     100% {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -60,7 +55,6 @@
     }
 
     100% {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -71,7 +65,6 @@
     }
 
     100% {
-        transform:translateX(200px);
         border-color: red;
     }
 }
@@ -82,7 +75,6 @@
     }
 
     100% {
-        transform:translateX(200px);
         border-color: red;
     }
 }
