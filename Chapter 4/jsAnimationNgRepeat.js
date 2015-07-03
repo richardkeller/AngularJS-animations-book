@@ -11,7 +11,7 @@ function repeatControllerFn() {
     * @desc Sort items array
     */
     rc.sortItems = function () {
-        rc.items.sort(function (a, b) { return a[name] < b[name] ? -1 : 1 });
+        rc.items.sort(function (a, b) { return a['name'] < b['name'] ? -1 : 1 });
     };
 }
 
